@@ -69,7 +69,6 @@
 
   nixpkgs.config.packageOverrides = self: rec {
     oh-my-zsh = self.callPackage ./oh-my-zsh.nix {};
-    weechat =
   };
 
   # Configure Zshell
