@@ -7,12 +7,15 @@
     ./packages.nix
     # xServer Config Required
     ./xserver.nix
+    # Replacement for hardware.nix
+    ./boot-and-fs.nix
   ];
 
   # Allow unfree
   nixpkgs.config.allowUnfree = true;
 
   networking = {
+    hostname = "munin";
     networkmanager.enable = true;
   };
 
