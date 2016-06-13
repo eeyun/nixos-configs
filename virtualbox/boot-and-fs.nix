@@ -5,9 +5,9 @@
 
   boot.initrd.availableKernelModules = [ "ata_piix" "ohci_pci" "ahci" "sd_mod" "sr_mod" ];
   boot.initrd.checkJournalingFS = false;
-
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
+
   boot.loader.grub = {
     enable = true;
     version = 2;
@@ -24,7 +24,7 @@
   };
 
   fileSystems."/home" = {
-      device = "rpool/root/nixos";
+      device = "rpool/home";
       fsType = "zfs";
     };
 

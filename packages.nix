@@ -5,6 +5,7 @@
   [
     # Shells
     zsh
+    zshrc
 
     # Editors
     vim
@@ -21,13 +22,20 @@
     ruby
     python
     python27Packages.websocket_client
+    python27Packages.six
 
     # Desktop
     awesome
+    slim
+    gtk_engines
+    lxappearance
+    stdenv
+    xfontsel
     xlibs.xmessage
     weechat
-    range
+    ranger
     mpd
+    mutt
     imagemagick
 
     # Admin
@@ -38,11 +46,12 @@
     tree
     wget
     curl
+    lsof
     openvpn
     nixops
 
     # Terminal Emulator
-    rxvt
+    rxvt_unicode
 
     # Nix
     nix-repl
