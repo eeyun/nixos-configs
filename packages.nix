@@ -6,6 +6,7 @@
     # Shells
     zsh
     zshrc
+    oh-my-zsh
 
     # Editors
     vim
@@ -21,6 +22,7 @@
     go
     ruby
     python
+    python27Packages.powerline
     python27Packages.websocket_client
     python27Packages.six
 
@@ -32,8 +34,11 @@
     stdenv
     xfontsel
     xlibs.xmessage
+    xlibs.xinput
     weechat
     ranger
+    feh
+    xpdf
     mpd
     mutt
     imagemagick

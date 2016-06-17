@@ -2,11 +2,8 @@
 
 {
   imports = [
-    # Portable nice to haves
     ./packages.nix
-    # xServer Config Required
     ./xserver.nix
-    # Replacement for hardware.nix
     ./boot-and-fs.nix
   ];
 
@@ -22,6 +19,7 @@
   # Extra Fonts
   fonts = {
     fonts = with pkgs; [
+      terminus_font
       corefonts
       inconsolata
       ubuntu_font_family
@@ -77,12 +75,11 @@
   nixpkgs.config.packageOverrides = pkgs: rec {
     oh-my-zsh = self.callPackage ./oh-my-zsh.nix {};
     zshrc = pkgs.callPackage ./zsh-config.nix {};
+    gcalcli = pkgs.callPackage ./gcalcli.nix {};
   };
 
   # Configure Zshell
   programs.zsh.interactiveShellInit = ''
-    cat << EOF > ~/.zshrc
-        . ${import ./zsh-config.nix}
-    EOF
+    source ${pkgs.zshrc}
   '';
 }
