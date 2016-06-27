@@ -16,4 +16,6 @@ writeText "zshrc" ''
 
   alias gitc="git checkout"
   alias gits="git status"
+
+  screenfetch
 ''

@@ -76,6 +76,8 @@
     oh-my-zsh = self.callPackage ./oh-my-zsh.nix {};
     zshrc = pkgs.callPackage ./zsh-config.nix {};
     gcalcli = pkgs.callPackage ./gcalcli.nix {};
+    rainbowstream = pkgs.callPackage ./rainbowstream.nix {};
+    requests235 = pkgs.stdenv.lib.overrideDerivation pkgs.python27Packages.requests2
   };
 
   # Configure Zshell
