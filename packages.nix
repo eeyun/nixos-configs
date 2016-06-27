@@ -24,6 +24,7 @@
     python
     python27Packages.powerline
     python27Packages.websocket_client
+    python27Packages.rainbowstream
     python27Packages.six
 
     # Desktop
@@ -37,11 +38,11 @@
     xlibs.xinput
     weechat
     ranger
+    screenfetch
     feh
     xpdf
     mpd
     mutt
-    imagemagick
 
     # Admin
     file
@@ -53,6 +54,8 @@
     curl
     lsof
     openvpn
+    openssl
+    cacerts
     nixops
 
     # Terminal Emulator

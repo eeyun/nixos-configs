@@ -34,10 +34,16 @@
 ! u r x v t
 
 URxvt*geometry: 112x22
-URxvt*font: xft:terminus:size=8
-URxvt*urlLauncher: opera
+URxvt*font: xft:terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*url-launcher: opera
 URxvt*scrollBar: false
 URxvt*scrollBar_right: true
 URxv*scrollColor: #000000  
 URxvt*scrollStyle: plain
 URxvt*secondaryScroll: true
+URxvt*borderLess: false
+URxvt*borderColor: #606f96
+URxvt*perl-ext:  default,matcher
+URxvt*matcher.button: 1
+URxvt*matcher.button: 2 \\bhttps?:\/\/[\\w-.]*\/[\\w./?&@#-]*.(jpg|jpeg|png)
+URxvt*matcher.launcher.2: feh $0
