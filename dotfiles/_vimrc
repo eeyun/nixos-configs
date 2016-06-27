@@ -1,6 +1,3 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
  set rtp+=~/.vim/bundle/Vundle.vim
  call vundle#begin()
@@ -14,6 +11,7 @@ Plugin 'blerins/flattown'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'LnL7/vim-nix'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -120,7 +118,7 @@ augroup end
         let g:airline_theme='bubblegum'
     else
         "colorscheme Monokai
-        colorscheme wolfpack
+        colorscheme 0x7A69_dark
         let g:airline_theme='flattown'
     endif
 
